@@ -1,0 +1,79 @@
+<html>
+<head>
+  <title>Moving Cover Image on Player</title>
+  <style>
+    #player {
+      width:600px;
+      height:338px;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      cursor:pointer;
+    }
+    p {
+      position:absolute;
+      font:13px/1 Helvetica, sans-serif;
+      color:#fff;
+      margin:0;
+      padding:0;
+      cursor:default;
+    }
+      p.closed-caption {
+        background-color:#000;
+        color:#ffff66;
+        font-size:16px;
+        font-style: italic;
+        padding:5px 10px;
+        letter-spacing: .08em;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom:15px; /* 36px with .copy-tease */
+      }
+      p.network-bug {
+        top:13px;
+        left:12px;
+      }
+        p.network-bug a {
+          text-decoration: none;
+          font-weight: bold;
+          color:#fff;
+          cursor:pointer;
+        }
+          p.network-bug a:hover {
+            color:#00bfff;
+          }
+    button {
+      position: absolute;
+      top:10px;
+      right:10px;
+      border:none;
+      border-radius: 3px;
+      padding:5px 10px;
+      font:bold 11px/1 Helvetica, sans-serif;
+      cursor: pointer;
+    }
+      button:hover {
+        background-color:#00bfff;
+      }
+
+  </style>
+</head>
+<body>
+
+  <div id="player">
+    <p class="network-bug">Dancing with the Stars&nbsp;&nbsp;-&nbsp;&nbsp;<a href="">Watch on ABC</a></p>
+    <p class="closed-caption">We've wasted our time on you!</p>
+    <button>Edit + Share Video</button>
+    <img class="play-button" alt="play" src="img/play-button.png" height="72" width="60">
+    <img alt="We've wasted our time on you!" src="img/moving-cover.gif" height="338" width="600">
+  </div>
+
+</body>
+</html>
